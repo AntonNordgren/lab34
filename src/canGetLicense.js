@@ -8,7 +8,7 @@ export const canGetLicense = (license, age) => {
         {licenseType: 'D', ageLimit: 24}
     ];
 
-    if(age < 0 || age >= 120) {
+    if(age < 0 || age > 120) {
         throw new Error('Invalid age');
     }
 

@@ -1,7 +1,6 @@
 export const toFahrenheit = (degrees) => {
 
-    if( typeof degrees !== 'number' && typeof degrees !== 'string' ||
-        degrees === Infinity || degrees === -Infinity || degrees <= -273.16 || (parseInt(degrees) === NaN)) {
+    if( typeof degrees !== 'number' && typeof degrees !== 'string' || degrees === Infinity || degrees < -273.15) {
         return NaN;
     }
     

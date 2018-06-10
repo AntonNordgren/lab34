@@ -49,7 +49,7 @@ describe('toFahrenheit test suite', () => {
     });
 
     test('send in invalid string returns NaN', () => {
-        expect(isNaN(toFahrenheit("Hej"))).toBe(true);
+        expect(isNaN(toFahrenheit("Hi"))).toBe(true);
     });
 
 });
