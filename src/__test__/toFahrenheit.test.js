@@ -35,7 +35,7 @@ describe('toFahrenheit test suite', () => {
     });
 
     test('Send in Obejct returns NaN', () => {
-        expect(isNaN(toFahrenheit({test: "test"}))).toBe(true);
+        expect(isNaN(toFahrenheit({}))).toBe(true);
     });
 
     // Invalid Degrees

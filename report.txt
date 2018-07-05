@@ -1,0 +1,88 @@
+
+Vi jämnför med Alejandro och Annas kod.
+--------------------------------------------------------------------------------------
+Temperaturomvandling
+
+Har ni testat samma saker?
+
+	När de testar funktionen använder de toBeCloseTo medans vi använder toBe,
+	då vi förväntar oss exakta värdet. Vi har också testat att skicka in en array, object och
+	-Infinty som parameter.
+
+Om ni har missat något testfall som de andra täckte in - varför tänkte ni inte på det?
+Hur kan man tänka för att inte missa sådana fall i framtiden?
+
+	Vi har testat allt som denna gruppar har testat och lite till.
+
+Vilka är de viktigaste testfallen?
+
+	Att man testar så att funktionen ger rätt temperatur. Men också kollar gränserna.
+
+--------------------------------------------------------------------------------------
+Körkort
+
+Har ni testat samma saker?
+
+	Vi var mer specifika med alla olika licenstyper. Alltså testa åldersgränserna vid gränsen t.ex.
+	B körkort 17 = false 18 = true. Detta gjorde vi på alla olika licenser. Vi testade också att skicka
+	in felaktiga parametrar som t.ex. ett objekt eller en array inte bara string.
+
+Om ni har missat något testfall som de andra täckte in - varför tänkte ni inte på det?
+Hur kan man tänka för att inte missa sådana fall i framtiden?
+
+	Någonting som vi glömde kolla som den här gruppen testade var att skicka en ett number med decimal som ålder.
+	Man får försöka tänka på små detaljer.
+
+Vilka är de viktigaste testfallen?
+
+	Skicka in test gränserna för varje licenstyp.
+
+--------------------------------------------------------------------------------------
+Bank
+
+Har ni testat samma saker?
+
+	Deposit
+	Vi har mer tester som genererar error. Vi testade att skicka in fler felaktiga parametrar
+	på användaren. Vi testade också att skicka med ett negativt nummer.
+
+	Withdraw
+	När den andra gruppen testade felaktiga parametrar testade det flera stycken medans vi testade 
+	bara med undefined på antalet pengar man ska skicka. De testade också att skicka 0 som parameter.
+	De gjorde 3 stycken tester på samma sak alltså att skicka in felatkig användare. Vi gjorde bara den en gång.
+	
+	Transfer
+	Här har de inte skrivit så mycket tester för felaktiga parametrar, vilket vi har skrivit en del.
+	
+
+Om ni har missat något testfall som de andra täckte in - varför tänkte ni inte på det?
+Hur kan man tänka för att inte missa sådana fall i framtiden?
+
+	Deposit
+	De testade att skicka in en sträng som nummer och det var någonting som vi inte tänkte på denna gången.
+
+	Withdraw
+	De testade att skicka in 0 som antal pengar. Det var något vi inte testade denna gången.
+	De testade också att skicka in en giltlig sträng som nummer.
+	
+	Transfer
+	De har testat att skriva in negativt antal pengar och giltlig sträng som nummer.
+
+	Att tänka på:
+	Får försöka tänka på detaljer och alla felaktiga inparametrar man kan skicka in.
+
+
+Vilka är de viktigaste testfallen?
+
+	Deposit
+	Det viktiste är att funktionaliteten fungerar och att man inte ska skicka in felatkiga parametrar.
+
+	Withdraw
+	Som vanligt är funktionaliteten viktigast och felhantering. Men så klart ska man inte kunna skicka mer
+	pengar än vad man har.
+
+	Transfer
+	Att man inte kan skicka pengar man inte har och att man skickar in giltiga parametrar.
+
+
+--------------------------------------------------------------------------------------
